@@ -1,105 +1,93 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="utf-8"/>
-<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"></script>
-<link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
-    
-<style>
-	.main {
-		position: absolute;
-		width: 100%;
-		height: 100%;
-		overflow: hidden;
-		background-color: transparent;
-		color: aquamarine;
-	}
-	.main div {
-		position: absolute;
-	}
-	.main :nth-child(1) {
-		top: 0;
-		left: 0;
-		width: 100%;
-		height: 4px;
-		animation: run1 2s linear infinite;
-		/* animation-delay: 0s;  */
-		background: linear-gradient(to right, #fff, #acd, cyan);
-	}
-	.main :nth-child(2) {
-		top: 0;
-		right: 0;
-		height: 100%;
-		width: 4px;
-		animation: run2 2s linear infinite;
-		/* animation-delay: 1s; 设置动画延迟加载时间*/
-		background: linear-gradient(to bottom, #fff, #acd, cyan);
-	}
-	.main :nth-child(3) {
-		bottom: 0;
-		left: 0;
-		height: 4px;
-		width: 100%;
-		animation: run3 2s linear infinite;
-		/* animation-delay: 2s; 设置动画延迟加载时间*/
-		background: linear-gradient(to right, #fff, #acd, cyan);
-	}
-	.main :nth-child(4) {
-		top: 0;
-		left: 0;
-		height: 100%;
-		width: 4px;
-		animation: run4 2s linear infinite;
-		/* animation-delay: 3s; 设置动画延迟加载时间 */
-		background: linear-gradient(to top, #fff, #acd, cyan);
-	}
-	@keyframes run1 {
-		from {
-			transform: translateX(-100%)
-		}
-		to {
-			transform: translateX(100%)
-		}
-	}
-	@keyframes run2 {
-		from {
-			transform: translateY(-100%)
-		}
-		to {
-			transform: translateY(100%)
-		}
-	}
-	@keyframes run3 {
-		from {
-			transform: translateX(100%)
-		}
-		to {
-			transform: translateX(-100%)
-		}
-	}
-	@keyframes run4 {
-		from {
-			transform: translateY(100%)
-		}
-		to {
-			transform: translateY(-100%)
-		}
-	}
-
-</style>
-</head>  
-
-<body>
-	<div class="main">
-		<div></div>
-		<div></div>
-		<div></div>
-		<div></div>
-	</div>
-
-</div> 
-</body>
+<!DOCTYPE html>  
+<html>  
+<head>  
+<meta charset="utf-8"/>  
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">  
+  
+<script src="https://cdnjs.cloudflare.com/ajax/libs/dayjs/1.10.6/dayjs.min.js"></script>  
+<link rel="preconnect" href="https://fonts.gstatic.com">  
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">  
+      
+<style>  
+ html, body {  
+            margin: 0;  
+            padding: 0;  
+            height: 100%;  
+            width: 100%;  
+            overflow: hidden; /* 如果不需要滚动条 */  
+        }  
+  
+  
+	.main {  
+		position: absolute;  
+        top: 0;  
+        left: 0; 
+		width: 100%;  
+		height: 100%;  
+		overflow: hidden;  
+		background-color: transparent;  
+		color: aquamarine; 
+        overflow: hidden;  
+	}  
+	.main div {  
+		position: absolute;  
+	}  
+	.main div:nth-child(1) {  
+		top: 0;  
+		left: 0;  
+		width: 100%;  
+		height: 4px;  
+		animation: run1 2s linear infinite;  
+		background: linear-gradient(to right, #fff, #acd, cyan);  
+	}  
+	.main div:nth-child(2) {  
+		top: 0;  
+		right: 0;  
+		height: 100%;  
+		width: 4px;  
+		animation: run2 2s linear infinite;  
+		background: linear-gradient(to bottom, #fff, #acd, cyan);  
+	}  
+	.main div:nth-child(3) {  
+		bottom: 0;  
+		left: 0;  
+		height: 4px;  
+		width: 100%;  
+		animation: run3 2s linear infinite;  
+		background: linear-gradient(to right, #fff, #acd, cyan);  
+	}  
+	.main div:nth-child(4) {  
+		top: 0;  
+		left: 0;  
+		height: 100%;  
+		width: 4px;  
+		animation: run4 2s linear infinite;  
+		background: linear-gradient(to top, #fff, #acd, cyan);  
+	}  
+	@keyframes run1 {  
+		from { transform: translateX(-100%); }  
+		to { transform: translateX(100%); }  
+	}  
+	@keyframes run2 {  
+		from { transform: translateY(-100%); }  
+		to { transform: translateY(100%); }  
+	}  
+	@keyframes run3 {  
+		from { transform: translateX(100%); }  
+		to { transform: translateX(-100%); }  
+	}  
+	@keyframes run4 {  
+		from { transform: translateY(100%); }  
+		to { transform: translateY(-100%); }  
+	}  
+</style>  
+</head>    
+<body>  
+	<div class="main">  
+		<div></div>  
+		<div></div>  
+		<div></div>  
+		<div></div>  
+	</div>  
+</body>  
 </html>
